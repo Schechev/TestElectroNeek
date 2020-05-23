@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<style>
+	#form {
+		display: flex;
+		flex-direction: column;
+		width: 200px;
+	}
+	#phone {
+		float: right;
+	}
+</style>
+<body>
+
+<div action= " " method = "POST" id="form">
+		<label> ФИО </label>
+		<input type= "text" placeholder="Введите Ваше имя">
+		<label>Телефон</label>
+		<div id="phone">
+			
+			<button onclick="addPhone()"> + </button>	
+		</div>
+		<label>Комментарии</label>
+		<textarea></textarea>
+		<button>Отправить</button>
+</div>
+
+
+
+
+<script>
+	addPhone();
+function addPhone () {
+	let a = document.getElementsByTagName('button')[0];
+	let b = document.createElement("input");
+	b.setAttribute("type", "tel");
+	b.setAttribute("placeholder", "Введите телефон");
+	phone.insertBefore(b, a);
+}
+</script>
+
+
+</body>
+</html>

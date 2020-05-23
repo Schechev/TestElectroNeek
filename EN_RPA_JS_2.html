@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body  style="background-color: black; text-align: center">
+
+<p id= "white" style="color: white"> </p>
+<p id= "blue"  style="color: blue"> </p>
+<p id = "red"  style="color: red"> </p>
+
+
+
+
+
+
+<script>
+
+let xsize = 80;
+let ysize = 20;
+
+let board = "O";
+
+for (let y = 0; y < ysize; y++) {
+  for (let x = 0; x < xsize; x++) {
+      board += "O";
+  }
+  board += "\n";
+  
+}
+
+console.log(board);
+
+document.getElementById("white").innerHTML= board;
+document.getElementById("blue").innerHTML= board;
+document.getElementById("red").innerHTML= board;
+</script>
+
+
+</body>
+</html>
